@@ -119,3 +119,10 @@
  '(rainbow-delimiters-depth-9-face ((t (:inherit rainbow-delimiters-base-face :foreground "white")))))
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; https://github.com/hvesalai/emacs-scala-mode
+(use-package scala-mode
+  :interpreter
+    ("scala" . scala-mode))
+(add-to-list 'auto-mode-alist '("\\.sc\\'" . scala-mode))
+(add-to-list 'auto-mode-alist '("\\.kojo\\'" . scala-mode))
