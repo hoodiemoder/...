@@ -1,2 +1,2 @@
 * ...
-Repo used for storing configuration files.
+Repositoryused for storing configuration files.
